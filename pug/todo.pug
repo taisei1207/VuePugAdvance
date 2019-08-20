@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="ja")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Document
+	body
+		#app
+			my-component(v-bind:my-list="list")
+		//- HTMLの属性名はケバブケース、JavaScript内のpropsで受け取る際の属性名は、キャメルケース
+
+		//- my-componentの登録
+		script#list-template(type="text/x-template")
+			div
+				input(v-model="addItem" v-on:keyup.enter="add")
+				button(v-on:click="add") 追加
+
+				| #{"\n"}
+				ul: li(v-for="item in myList" v-bind:key="item") {{ item }}
+
+		script(src='https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js')
+		script(src='js/todo.js')

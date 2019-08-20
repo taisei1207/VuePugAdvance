@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===============================================
+ style.css -  maps
+===============================================*/
+
+/* map */
+body {
+	width:100%;
+	margin: 0;
+	color: #333;
+	font-family: sans-serif; font-family:"�q���M�m�p�S Pro W3", "Hiragino Kaku Gothic Pro", "���C���I", Meiryo, Osaka, "�l�r �o�S�V�b�N", "MS PGothic", sans-serif;
+	font-size: 62.5%;
+	background:#e6e6e6;
+	/*background:url(../img/bk_paper.jpg) repeat;*/
+}
+a { text-decoration: none; color: #003461; }
+h1,h2,h3,h4,h5,h6 { margin:0; color: #003461; font-size:bold; }
+img { vertical-align: bottom; }
+
+article { max-width: 900px; margin: 0 auto; }
+
+#MapSection {
+	border-radius: 5px;		/* CSS3 */
+	-webkit-border-radius: 5px;	/* Safari,Google Chrome */
+	-moz-border-radius: 5px;	/* Firefox */
+	border: 0.9em solid #fff;
+	width:95%; padding-bottom:90%; margin: 5% auto;
+}
+
+.list {
+	letter-spacing: -0.02em;
+	text-align: center;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin-right: 0.5em;
+	text-align: center;
+}
+.eat {
+	background: #003461;
+	color: #fff;
+}
+.other {
+	font-weight: bold;
+	background: #b7d31b;
+	color: #003461;
+	text-transform: uppercase;
+}
+.list { font-size: 1.3em; display: inline-block; }
+.eat { width: 2em; height: 2em; line-height: 35px; }
+.other { width: 1.9em; height: 1.9em; line-height: 33px; border: 1px solid #003461; }
+
+.mapCont table, .mapCont02 table { padding:0; }
+.mapCont th img, .mapCont02 th img { width: 100%; }
+.mapCont th, .mapCont02 th { padding-right: 4px; }
+
+.mapCont h1, .mapCont02 h1 { color: #003461; font-size:bold; font-size: 1.1em; line-height: 1.2; white-space:nowrap; }/* 11px */
+.mapCont h1 .genre { font-size: 80%; }
+.mapCont img { padding-right: 4px; }
+.mapCont .main, .mapCont02 .main { margin-bottom:0.8em; }
+.sdata { padding: 0.5em 0 0 0.5em; font-size: 0.9em; line-height:1.2; margin:0 0 1em 0; }
+
+@media screen and (max-width: 520px){
+#MapSection { height: 420px; padding-bottom:0; }
+}

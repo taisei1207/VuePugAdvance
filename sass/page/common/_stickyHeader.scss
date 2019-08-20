@@ -1,0 +1,30 @@
+body {
+	background: #eee;
+}
+
+.header {
+	@include flex-between;
+	background: #fff;
+	border: solid thin #000;
+	padding: 2rem calc(50% - 500px);
+	margin-top: 10rem;
+	&-nav {
+		width: 65%;
+		&__list {
+			@include flex-between;
+			&-item {
+				width: 15%;
+			}
+		}
+	}
+}
+
+.read {
+	padding: 2rem calc(50% - 500px);
+	font-size: 1.5rem;
+	p {
+		&:nth-child(1) {
+			margin-bottom: 4rem;
+		}
+	}
+}

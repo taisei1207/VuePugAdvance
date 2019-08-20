@@ -13,7 +13,7 @@ var MyComponent = {
 new Vue({
 	el: '#app',
 	data: {
-		item: 'Vue Advance World!'
+		item: 'Vue Advance'
 	},
 	components: {
 		'my-component': MyComponent

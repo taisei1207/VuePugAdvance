@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>{{ time }}</p>
+      <button v-on:click="doStart" v-bind:disabled="startBool">START</button>
+      <button v-on:click="doStop" v-bind:disabled="stopBool">STOP</button>
+      <button v-on:click="doReset">RESET</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="js/stop.js"></script>
+  </body>
+</html>
