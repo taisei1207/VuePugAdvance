@@ -29,7 +29,7 @@ button {
 		background: linear-gradient(to top,#1AC2ED,#7E4CB8);
 		transform-origin: right;
 		transform: scaleX(0);
-		transition: transform 0.25s ease-in-out;
+		transition: transform 0.7s ease-in-out;
 	  }
 
 	  &:hover {
@@ -49,7 +49,7 @@ button {
 .layer {
 	width: 100%;
 	height: 400px;
-	margin: 150px 0;
+	margin: 200px 0;
 	transform: skewY(15deg);
 
 	&::before {
@@ -77,10 +77,10 @@ button {
 		transform: scaleX(1);
 	  }
 
-	&:hover::before {
-		transform-origin: left;
-		transform: scaleX(1);
-	}
+	// &:hover::before {
+	// 	transform-origin: left;
+	// 	transform: scaleX(1);
+	// }
 
 	&Inner {
 		transform: skewY(-15deg);
@@ -93,16 +93,14 @@ button {
 	height: 200px;
 	background-color: rgba(241, 252, 248, 1);
 	color: #000;
-	overflow: hidden;
+	// overflow: hidden;
 	position: relative;
 	line-height: 200px;
 
 
 	&::before, &::after, &Inner::before, &Inner::after {
 		content: "";
-		// display: block;
 		position: absolute;
-		// background: #000;
 		background: linear-gradient(to right,#1AC2ED,#7E4CB8);
 	}
 
