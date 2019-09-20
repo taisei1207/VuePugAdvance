@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/page/PW.css">
+	<title>PW</title>
+</head>
+<body>
+	<div id="app">
+		<h3>暗唱番号を入力してください</h3>
+		<ul class="list">
+			<li class="input-box" type="tell" v-for="num in nums":key="num"></li>
+		</ul>
+
+		<button class="button">認証する</button>
+	</div>
+	<script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
+	<script src="js/PW.js"></script>
+</body>
+</html>
