@@ -12,7 +12,10 @@
 	<div id="app">
 		<h3>暗唱番号を入力してください</h3>
 		<ul class="list">
-			<li class="input-box" type="tell" v-for="num in nums":key="num"></li>
+			<li class="box"><input class="input-box" type="tell" v-model="num1" maxlength="1" @input="goNext" id="1" ref="1"></li>
+			<li class="box"><input class="input-box" type="tell" v-model="num2" maxlength="1" @input="goNext" id="2" ref="2"></li>
+			<li class="box"><input class="input-box" type="tell" v-model="num3" maxlength="1" @input="goNext" id="3" ref="3"></li>
+			<li class="box"><input class="input-box" type="tell" v-model="num4" maxlength="1" @input="goNext" id="4" ref="4"></li>
 		</ul>
 
 		<button class="button">認証する</button>
